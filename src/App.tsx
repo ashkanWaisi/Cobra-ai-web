@@ -1740,7 +1740,7 @@ C:\\Users\\<username>\\Documents\\COBRA\\outputs\\`}
               <img
                 src={screenshotImages[showLightbox]}
                 alt={lang === 'fa' ? screenshotPlaceholders[showLightbox].caption_fa : screenshotPlaceholders[showLightbox].caption_en}
-                className="block w-auto max-w-full h-auto max-h-[78vh]"
+                className="block max-w-full h-auto max-h-[80vh] object-contain"
               />
             </div>
             <div className="flex items-center justify-between mt-4">
