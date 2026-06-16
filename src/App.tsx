@@ -1448,11 +1448,12 @@ C:\\Users\\<username>\\Documents\\COBRA\\outputs\\`}
                   className="group glass rounded-xl overflow-hidden hover:border-cobra-primary/20 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-cobra-primary"
                   aria-label={`${lang === 'fa' ? ss.caption_fa : ss.caption_en} — ${lang === 'en' ? 'Click to enlarge' : 'برای بزرگنمایی کلیک کنید'}`}
                 >
-                  <div className="bg-gradient-to-br from-cobra-surface to-cobra-surface2 overflow-hidden">
+                  <div className="bg-gradient-to-br from-cobra-surface to-cobra-surface2 overflow-hidden flex items-center justify-center">
                     <img
                       src={screenshotImages[idx]}
                       alt={lang === 'fa' ? ss.caption_fa : ss.caption_en}
-                      className="block w-full h-auto"
+                      className="block w-full h-auto max-w-full object-contain"
+                      style={{ aspectRatio: 'auto' }}
                       loading="lazy"
                     />
                   </div>
@@ -1740,7 +1741,8 @@ C:\\Users\\<username>\\Documents\\COBRA\\outputs\\`}
               <img
                 src={screenshotImages[showLightbox]}
                 alt={lang === 'fa' ? screenshotPlaceholders[showLightbox].caption_fa : screenshotPlaceholders[showLightbox].caption_en}
-                className="block max-w-full h-auto max-h-[80vh] object-contain"
+                className="block w-auto h-auto max-w-full max-h-[78vh] object-contain mx-auto"
+                style={{ aspectRatio: 'auto' }}
               />
             </div>
             <div className="flex items-center justify-between mt-4">
